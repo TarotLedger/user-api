@@ -1,0 +1,56 @@
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+**/build/
+
+# Gradle Wrapper는 커밋 대상(gradlew, gradlew.bat, gradle/wrapper/**)이라 ignore 하지 않음
+
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Env / Secrets
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Spring (local overrides)
+# =========================
+# 로컬 전용 설정 파일
+# application-local.yml
+# application-local.yaml
+# application-dev.yml
+# application-dev.yaml
+
+# =========================
+# Docker
+# =========================
+# (주의) docker volume 데이터는 git에 포함되지 않음

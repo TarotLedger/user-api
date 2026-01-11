@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: tarot-ledger-api
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tarot
+    username: tarot
+    password: tarotpass
+  jpa:
+    hibernate:
+      ddl-auto: validate   # 초반엔 create/update도 가능하지만 Flyway 쓰면 validate 추천
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
